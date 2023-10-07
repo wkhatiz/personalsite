@@ -1,0 +1,15 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+main {
+    width: 300px;
+}
+
+p, input, textarea, button {
+    display: block;
+    margin: 20px 0 20px 0;
+    width: 100%;
+}
