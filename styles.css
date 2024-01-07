@@ -369,6 +369,10 @@ p {
         flex-direction: column;
         height: auto;
     }
+
+    .project-card div h3 {
+        width: 16px;
+    }
     
     .project-card img {
         width: 90%;
