@@ -4,26 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waled Khatiz</title>
-    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <h1>Hi, I'm Waled Khatiz</h1>
-        <p>Sorry, it's a bit empty here. That'll change soon.<br/>In the mean time you can contact me using the form below.</p>
+    <div id="splash">
+        <nav>
+            <ul>
+                <li><a href="https://www.github.com/wkhatiz">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/waledkhatiz">LinkedIn</a></li>
+            </ul>
+        </nav>
+        <h1>Waled Khatiz</h1>
+        <p>QA Engineer by day</p>
+        <p>Web Developer by night</p>
+        <div>
+            <p>Front-end development skills using 
+                tools such as TailwindCSS, TypeScript, React.js and React Native</p>
+            <p>Software Testing skills using tools 
+                such as Jest, Cypress, Robot Framework, JMeter and 
+                LoadRunner</p>
+        </div>
+    </div>
+    <div id="about">
+        <h2>About Me</h2>
+        <p>Driven by a childhood interest in digital arts and technologies, I've always been poking and prodding at 
+            computers in one way or another. After excelling at Software Development in my academics I went on to 
+            recieve a Bachelor of Computer Science with an interest in the Front-end Web and Mobile space. I'm 
+            currently working full-time as a QA Engineer while contributing to web development projects in my personal 
+            time. I look forward to seeing where my curiosity takes me.</p>
+        <div class="achievement-cont">
+            <div class="achievement">
+                <img src="wsu.png"></img>
+                <div>
+                    <h3>Achievement Unlocked</h3>
+                    <p>Bachelor of Computer Science</p>
+                </div>
+            </div>
+            <div class="achievement">
+                <img src="wrench.png"></img>
+                <div>
+                    <h3>Achievement Unlocked</h3>
+                    <p>Professional Website Breaker</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <h2>Projects</h2>
+        <a href="https://github.com/wkhatiz/ironmecca" class="project-card" id="ironmecca-card">
+            <img src="ironmecca-screencap.png"></img>
+            <div>
+                <h3>Iron Mecca</h3>
+                <p>A front-end application for a mock gym/fitness commercial website. It was built using 
+                    React.js, TailwindCSS and TypeScript and implements features such as a map panel to 
+                    show gym locations, contact forms and a shopping cart.</p>
+                <ul class="skill-marquee">
+                    <li>TailwindCSS</li>
+                    <li>TypeScript</li>
+                    <li>React.js</li>
+                    <li>React Router</li>
+                    <li>Formspree</li>
+                    <li>OpenStreetMaps</li>
+                </ul>
+            </div>
+        </a>
+        <a href="https://github.com/wkhatiz/hdigooths" class="project-card" id="hdigooths-card">
+            <img src="hdigooths-screencap.jpg"></img>
+            <div>
+                <h3>How Do I Get Out Of Town Hall Station</h3>
+                <p>HDIGOOTHS is an app built to explore djikstras algorithm 
+                    and React Native. The application takes in the starting node, lists the exits from Town 
+                    Hall Station in order of distance from the starting node, then provides steps.</p>
+                <ul class="skill-marquee">
+                    <li>React Native</li>
+                    <li>Expo</li>
+                    <li>Djikstras Algorithm</li>
+                    <li>Android Studio</li>
+                </ul>
+            </div>
+        </a>
+    </div>
+    <div id="contact">
+        <h2>Contact Me</h2>
         <form
         action="https://formspree.io/f/xnqkorrg"
         method="POST"
-        >
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
-            <button type="submit">Send</button>
-        </form>
-    </main>
+      >
+        <div>
+        <input type="text" name="name" id="contact-name" placeholder="Your Name">
+        <input type="email" name="email" id="contact-email" placeholder="Your Email">
+    </div>
+        <input type="text" name="subject" id="contact-subject" placeholder="Subject">
+        <textarea name="message" id="contact-body" placeholder="Insert your message here..."></textarea>
+        <button type="submit" id="submit">Send</button>
+      </form>
+    </div>
 </body>
 </html>
